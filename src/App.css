@@ -147,58 +147,216 @@ body{
 }
 
 .profile-icons {
-  margin-top: 150px;
+  margin-top: 20px;
   position: relative;
   display: flex;
   justify-content: center;
   z-index: 1;
+  
 }
 
-.profile-icons-content {
-  position: absolute;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: rgba(214, 40, 40, 1);
-  font-size: 50px;
+@keyframes moveFerrisWheel {
+  0% {
+    transform: rotate(0deg) translate(125px) rotate(0deg);
+  }
+
+  12.5% {
+    transform: rotate(45deg) translate(125px) rotate(-45deg);
+  }
+
+  25% {
+    transform: rotate(90deg) translate(125px) rotate(-90deg);
+  }
+
+  37.5% {
+    transform: rotate(135deg) translate(125px) rotate(-135deg);
+  }
+
+  50% {
+    transform: rotate(180deg) translate(125px) rotate(-180deg);
+  }
+
+  62.5% {
+    transform: rotate(225deg) translate(125px) rotate(-225deg);
+  }
+
+  75% {
+    transform: rotate(270deg) translate(125px) rotate(-270deg);
+  }
+
+  87.5% {
+    transform: rotate(315deg) translate(125px) rotate(-315deg);
+  }
+
+  100% {
+    transform: rotate(360deg) translate(125px) rotate(-360deg);
+  }
 }
 
 .profile-icons-content:nth-child(1) {
-  transform: rotate(0deg) translate(125px) rotate(0deg);
+  animation-delay: 0s;
 }
 
 .profile-icons-content:nth-child(2) {
-  transform: rotate(40deg) translate(125px) rotate(-40deg);
+  animation-delay: 0.25s;
 }
 
 .profile-icons-content:nth-child(3) {
-  transform: rotate(80deg) translate(125px) rotate(-80deg);
+  animation-delay: 0.5s;
 }
 
 .profile-icons-content:nth-child(4) {
-  transform: rotate(120deg) translate(125px) rotate(-120deg);
+  animation-delay: 0.75s;
 }
 
 .profile-icons-content:nth-child(5) {
-  transform: rotate(160deg) translate(125px) rotate(-160deg);
+  animation-delay: 1s;
 }
 
 .profile-icons-content:nth-child(6) {
-  transform: rotate(200deg) translate(125px) rotate(-200deg);
+  animation-delay: 1.25s;
 }
 
 .profile-icons-content:nth-child(7) {
-  transform: rotate(240deg) translate(125px) rotate(-240deg);
+  animation-delay: 1.5s;
 }
 
 .profile-icons-content:nth-child(8) {
-  transform: rotate(280deg) translate(125px) rotate(-280deg);
+  animation-delay: 1.75s;
 }
 
 .profile-icons-content:nth-child(9) {
-  transform: rotate(320deg) translate(125px) rotate(-320deg);
+  animation-delay: 2s;
 }
 
+.img-container{
+  margin-top:-32%;
+  margin-left:870px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+
+}
+
+.img-profile{
+  position: absolute;
+  width: 350px;
+  height: 375px;
+
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 70px;
+  border-bottom-right-radius: 15px;
+  border-top-right-radius: 70px;
+  border-left-color: rgba(0, 0, 0, 0.55);
+  border-bottom-color: rgba(0, 0, 0, 0.55);
+  border-right-color:rgba(0, 0, 0, 0.55);
+  border-top-color:rgba(0, 0, 0, 0.55);
+  border-style: solid;
+  border-width: 10px;
+}
+
+.img-profile:nth-child(1){
+  top:  10px;
+  left: -90px;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-style: hidden;
+
+  width: 360px;
+  height: 385px;
+}
+
+.img-profile:nth-child(2){
+  top:  1px;
+  left: -80px;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-style: hidden;
+
+  width: 360px;
+  height: 385px;
+}
+
+.img-profile:nth-child(3){
+  top: -20px;
+  left: -70px;
+  
+}
+
+.profile-img{
+  margin-top:-32%;
+  margin-left:870px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 70px;
+  border-bottom-right-radius: 15px;
+  border-top-right-radius: 70px;
+  border-left-color: rgba(39,39,39);
+  border-bottom-color: rgba(39,39,39);
+  border-right-color:rgba(245, 243, 243);
+  border-top-color:rgb(245, 243, 243);
+  border-style: solid;
+  border-width: 10px;
+
+  z-index: 1;
+}
+
+
+@media(max-width: 1000px){
+
+.navbar{
+display: none;
+}
+
+.img-container{
+  display: none;
+}
+
+.profile-odd{
+  margin-bottom: 70px;
+  margin-right: 20px;
+  margin-left:20px;
+  height: 500px;
+}
+
+.profile-odd h1{
+  margin: 20px;
+  margin-bottom: 20px;
+}
+
+.profile-odd p{
+  margin-left: 20px;
+  margin-right: 20px;
+  font-weight: 10px;
+  letter-spacing: 1px;
+  word-spacing: 3px;
+  text-align: justify;
+}
+
+.profile-even{
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+
+.profile-even h1{
+  margin: 20px;
+  margin-bottom: 20px;
+}
+
+.profile-even p{
+  margin-left: 20px;
+  margin-right: 20px;
+  font-weight: 10px;
+  letter-spacing: 2px;
+  word-spacing: 5px;
+  text-align: justify;
+  
+}
+
+
+
+}
 
 
 

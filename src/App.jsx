@@ -7,6 +7,7 @@ import {SiMicrosoftsqlserver, SiAntdesign} from 'react-icons/si'
 
 import NavigationBar from './components/NavigationBar'
 import larrie from './assets/Larrie.jpg'
+import Circular from './components/Circular'
 
 function App() {
  
@@ -38,7 +39,12 @@ function App() {
             B.S. Computer Science(2013 University of the East)
           </p>
 
-          <img className='profile-img' src={larrie} width="300" height="350"/>
+          <div className="img-container">
+            <div className="img-profile"></div>
+            <div className="img-profile"></div>
+            <img className='img-profile' src={larrie}/>
+          </div>
+
         </div>
 
         <div className='profile-even' id='secondID'>
@@ -46,15 +52,7 @@ function App() {
           <p>In the realm of development, being updated with the latest tech is like being a human GPS navigating through a labyrinth of ever-changing routes</p>
   
           <div className='profile-icons'>         
-                <div className='profile-icons-content'><AiOutlineHtml5/></div>
-                <div className='profile-icons-content'><BiLogoCss3/></div>
-                <div className='profile-icons-content'><BiLogoTailwindCss/></div>
-                <div className='profile-icons-content'><SiAntdesign/></div>
-                <div className='profile-icons-content'><RiJavascriptFill/></div>
-                <div className='profile-icons-content'><BiLogoReact/></div>
-                <div className='profile-icons-content'><BiLogoNodejs/></div>
-                <div className='profile-icons-content'><SiMicrosoftsqlserver/></div>
-                <div className='profile-icons-content'><BiLogoMongodb/></div>
+              <Circular />
           </div>
         
         </div>
@@ -68,8 +66,8 @@ function App() {
           <h1>Projects</h1>
           <p>Coming Soon...</p>
         </div>
-
     </div>
+
     </>
   )
 }
