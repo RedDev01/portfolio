@@ -316,12 +316,13 @@ display: none;
 .profile-odd{
   margin-bottom: 70px;
   margin-right: 10px;
-  margin-left:10px;
-  height: 700px;
+  margin-left: 10px;
+  height: 600px;
 }
 
 .profile-odd h1{
   margin: 20px;
+  margin-top: 40px;
   margin-bottom: 20px;
 }
 
@@ -341,11 +342,12 @@ display: none;
   margin-bottom: 70px;
   margin-right: 10px;
   margin-left:10px;
-  height: 700px;
+  height: 600px;
 }
 
 .profile-even h1{
   margin: 20px;
+  margin-top: 40px;
   margin-bottom: 20px;
 }
 
@@ -359,6 +361,14 @@ display: none;
   
 }
 
+.profile-icons {
+  margin-top: 50px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  z-index: 1;
+  
+}
 
 
 }
