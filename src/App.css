@@ -315,9 +315,9 @@ display: none;
 
 .profile-odd{
   margin-bottom: 70px;
-  margin-right: 20px;
-  margin-left:20px;
-  height: 500px;
+  margin-right: 10px;
+  margin-left:10px;
+  height: 700px;
 }
 
 .profile-odd h1{
@@ -337,6 +337,11 @@ display: none;
 .profile-even{
   overflow-y: hidden;
   overflow-x: hidden;
+
+  margin-bottom: 70px;
+  margin-right: 10px;
+  margin-left:10px;
+  height: 700px;
 }
 
 .profile-even h1{
