@@ -1,3 +1,32 @@
+@font-face {
+  font-family: 'Orbitron';
+  src: url('../src/fonts/Orbitron-Regular.ttf') format('truetype'); /* adjust the path as needed */
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Orbitron-ExtraBold';
+  src: url('../src/fonts/Orbitron-ExtraBold.ttf') format('truetype'); /* adjust the path as needed */
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: 'PressStart2P';
+  src: url('../src/fonts/PressStart2P-Regular.ttf') format('truetype'); /* adjust the path as needed */
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'TitanOne';
+  src: url('../src/fonts/TitanOne-Regular.ttf') format('truetype'); /* adjust the path as needed */
+  font-weight: normal;
+  font-style: normal;
+}
+
 html{
   scroll-behavior: smooth;
 }
@@ -40,6 +69,8 @@ body{
 }
 
 .navcontent {
+  font-family: "PressStart2P";
+  font-size: 10px;
   margin-right: 50px;
   cursor: pointer;
   padding-top:15px;
@@ -100,17 +131,36 @@ body{
 }
 
 .profile-odd h1{
-  margin: 50px;
-  margin-bottom: 20px;
+  font-family: "Orbitron-ExtraBold", sans-serif;
+  color: rgba(39,39,39);
+  width: 350px;
+  height: 40px;
+  padding-left: 45px;
+  position: relative;
+  background-color: antiquewhite;
+  border-bottom: 2px solid rgba(39,39,39);
+}
+.profile-odd h1::before {
+  content: "";
+  position: absolute;
+  right: -20px;
+  bottom: 0;
+  width: 0;
+  height: 0;
+  border-top: 40px solid antiquewhite;
+  border-right: 20px solid transparent;
 }
 
 .profile-odd p{
+  font-family: "Orbitron";
+  font-weight: bolder;
+  font-size: 14px;
   margin-left: 50px;
   margin-right: 550px;
   font-weight: 10px;
-  letter-spacing: 2px;
   word-spacing: 5px;
   text-align: justify;
+  letter-spacing: 2px;
 }
 
 
@@ -133,17 +183,36 @@ body{
 }
 
 .profile-even h1{
-  margin: 50px;
-  margin-bottom: 20px;
+  font-family: "Orbitron-ExtraBold", sans-serif;
+  color: antiquewhite;
+  width: 350px;
+  height: 40px;
+  padding-left: 45px;
+  position: relative;
+  background-color: rgba(214, 40, 40, 1);
+  border-bottom: 2px solid antiquewhite;
+}
+
+.profile-even h1::before {
+  content: "";
+  position: absolute;
+  right: -20px;
+  bottom: 0;
+  width: 0;
+  height: 0;
+  border-top: 40px solid rgba(214, 40, 40, 1);
+  border-right: 20px solid transparent;
 }
 
 .profile-even p{
+  font-family: "Orbitron";
+  font-size: 14px;
   margin-left: 50px;
   margin-right: 50px;
   font-weight: 10px;
-  letter-spacing: 1px;
   word-spacing: 5px;
   text-align: justify;
+  letter-spacing: 2px;
 }
 
 .profile-icons {
@@ -324,6 +393,7 @@ display: none;
   margin: 20px;
   margin-top: 40px;
   margin-bottom: 20px;
+  margin-left: -20px;
 }
 
 .profile-odd p{
@@ -343,6 +413,7 @@ display: none;
   margin-right: 10px;
   margin-left:10px;
   height: 600px;
+  margin-left: -20px;
 }
 
 .profile-even h1{
