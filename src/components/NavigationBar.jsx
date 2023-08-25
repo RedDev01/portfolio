@@ -1,5 +1,6 @@
 import '../App.css' 
 import {Link} from 'react-scroll'
+import {BiMenu} from 'react-icons/bi'
 
  
 const NavigationBar = () => {
@@ -12,6 +13,8 @@ const NavigationBar = () => {
     
     return (
         <>
+
+        <div className='navicon'><BiMenu /></div>
 
         <nav className='navbar'>
         

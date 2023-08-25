@@ -1,9 +1,4 @@
-import { useState } from 'react'
 import './App.css'
-import { AiOutlineHtml5 } from 'react-icons/ai'
-import {BiLogoCss3, BiLogoTailwindCss, BiLogoReact, BiLogoNodejs, BiLogoMongodb} from 'react-icons/bi'
-import {RiJavascriptFill} from 'react-icons/ri'
-import {SiMicrosoftsqlserver, SiAntdesign} from 'react-icons/si'
 
 import NavigationBar from './components/NavigationBar'
 import larrie from './assets/Larrie.jpg'
@@ -36,7 +31,7 @@ function App() {
             <br/>
             Larrie I. Adriano
             <br/>
-            B.S. Computer Science(2013 University of the East)
+            B.S. Computer Science (2013 University of the East)
           </p>
 
           <div className="img-container">
