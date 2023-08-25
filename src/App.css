@@ -383,6 +383,9 @@ display: none;
 }
 
 .profile-odd{
+  overflow-y: hidden;
+  overflow-x: hidden;
+
   margin-bottom: 70px;
   margin-right: 10px;
   margin-left: 10px;
@@ -394,6 +397,14 @@ display: none;
   margin-top: 40px;
   margin-bottom: 20px;
   margin-left: -20px;
+
+  width: 210px;
+  height: 30px;
+  font-size: 20px;
+}
+
+.profile-odd h1::before {
+  border-top: 30px solid antiquewhite;
 }
 
 .profile-odd p{
@@ -403,6 +414,8 @@ display: none;
   letter-spacing: 1px;
   word-spacing: 3px;
   text-align: justify;
+
+  font-size: 12px;
 }
 
 .profile-even{
@@ -419,6 +432,15 @@ display: none;
   margin: 20px;
   margin-top: 40px;
   margin-bottom: 20px;
+  margin-left: -20px;
+
+  width: 210px;
+  height: 30px;
+  font-size: 20px;
+}
+
+.profile-even h1::before {
+  border-top: 30px solid rgba(214, 40, 40, 1);
 }
 
 .profile-even p{
@@ -429,6 +451,7 @@ display: none;
   word-spacing: 5px;
   text-align: justify;
   
+  font-size: 12px;
 }
 
 .profile-icons {
