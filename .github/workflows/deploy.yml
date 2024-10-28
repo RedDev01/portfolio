@@ -1,45 +1,39 @@
-name: Deploy
+name: Deploy to GitHub Pages
 
 on:
   push:
     branches:
-      - main
+      - main  # or your default branch
 
 jobs:
   build:
-    name: Build
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout repo
+      - name: Checkout code
         uses: actions/checkout@v2
 
-      - name: Build
-        run: |
-          npm install
-          npm run build
-
-
-      - name: Upload artifact
-        uses: actions/upload-artifact@v3
+      - name: Set up Node.js
+        uses: actions/setup-node@v2
         with:
-          name: build
-          path: ./dist  # Adjust this to your output directory
+          node-version: '14'  # Use your preferred version
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Build
+        run: npm run build  # Make sure this matches your build command
 
   deploy:
-    name: Deploy
-    needs: build
     runs-on: ubuntu-latest
-    if: github.ref == 'refs/heads/main'
+    needs: build  # This ensures the deploy job runs after the build job
 
     steps:
-      - name: Download artifact
-        uses: actions/download-artifact@v3
-        with:
-          path: ./dist
+      - name: Checkout code
+        uses: actions/checkout@v2
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./dist
+          publish_dir: ./dist/assets  # Adjust this path based on your build output
