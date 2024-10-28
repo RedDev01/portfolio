@@ -15,7 +15,7 @@ function App() {
         <div className='profile-odd' id='firstID'>
           <h1>Hello there! a</h1>
           <p>
-            a'm not your average Full Stack Web Developer; I bring the magic of React.js, Node.js, MongoDB, and MSSQL to the digital realm! With my skills, I can make your web applications dance and sing like never before.
+            I'm not your average Full Stack Web Developer; I bring the magic of React.js, Node.js, MongoDB, and MSSQL to the digital realm! With my skills, I can make your web applications dance and sing like never before.
 
             Picture this: dynamic user interfaces that are so responsive, they practically read your mind. And with my knack for developing RESTful APIs, data flow becomes smoother than a salsa dancer on a Saturday night.
 
