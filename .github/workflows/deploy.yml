@@ -36,4 +36,4 @@ jobs:
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./dist/assets  # Adjust this path based on your build output
+          publish_dir: ../dist/assets  # Adjust this path based on your build output
