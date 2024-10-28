@@ -13,7 +13,7 @@ function App() {
       
     <div className='main-content'>
         <div className='profile-odd' id='firstID'>
-          <h1>Hello there!</h1>
+          <h1>Hello ther!</h1>
           <p>
             I'm not your average Full Stack Web Developer; I bring the magic of React.js, Node.js, MongoDB, and MSSQL to the digital realm! With my skills, I can make your web applications dance and sing like never before.
 
